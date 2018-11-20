@@ -1,0 +1,46 @@
+{
+    "name": "booking",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "mixins": {
+      "Timestamp": {}
+    },
+    "options": {
+      "validateUpsert": true,
+      "mongodb": {
+        "collection": "bookings"
+      }
+    },
+    "properties": {
+      "from": {
+        "type": "date",
+        "required": true
+      },
+      "to": {
+        "type": "date",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "isDeleted": {
+        "type": "boolean",
+        "default": false
+      },
+      "userId": {
+          "type": "string"
+      }
+    },
+    "validations": [],
+    "relations": {
+        "user": {
+            "type": "belongsTo",
+            "model": "user",
+            "foreignKey": "userId"
+          }
+    },
+    "acls": [],
+    "methods": {}
+  }
+  
