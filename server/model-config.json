@@ -16,9 +16,6 @@
   "User": {
     "dataSource": "db"
   },
-  "order": {
-    "dataSource": "db"
-  },
   "AccessToken": {
     "dataSource": "db",
     "public": false
@@ -37,10 +34,6 @@
   "Role": {
     "dataSource": "db",
     "public": false
-  },
-  "test": {
-    "dataSource": "dargee",
-    "public": true
   },
   "booking": {
     "dataSource": "dargee",
