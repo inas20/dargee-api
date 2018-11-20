@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "dargee": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/dargee",
+    "database": "dargee",
+    "password": "",
+    "name": "dargee",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
